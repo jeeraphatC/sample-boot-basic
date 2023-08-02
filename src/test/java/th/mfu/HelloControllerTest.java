@@ -20,4 +20,16 @@ public class HelloControllerTest {
         // Assert
         assertEquals("Hello World!", response);
     }
+
+    @Test
+    public void testHi() {
+        String response = controller.hi("tunk");
+        assertEquals("Hello tunk", response);
+    }
+
+    @Test
+    public void testSum() {
+        String response = controller.sum(1, 2);
+        assertEquals("sum 3", response);
+    }
 }
